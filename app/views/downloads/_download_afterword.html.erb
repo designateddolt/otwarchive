@@ -23,5 +23,5 @@
     </div>
   <% end %>
 
-  <p class="message"><%= ts("Please") %> <%= link_to ts("drop by the archive and comment"), new_work_comment_url(@work) %> <%= ts("to let the #{"creator".pluralize(@work.creatorships.length)} know if you enjoyed their work!") %></p>
+  <p class="message"><%= ts("Please") %> <%= link_to ts("drop by the archive and comment"), new_work_comment_url(@work) %> <%= ts("to let the #{"creator".pluralize(@work.creatorships.size)} know if you enjoyed their work!") %></p>
 </div>
